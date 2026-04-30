@@ -150,7 +150,7 @@ export default function AdminLoginPage() {
             </div>
 
             <div className="flex items-center justify-between text-sm py-2">
-              <Link href="/admin/forgot-password" size="sm" className="text-xs font-bold text-primary hover:underline">
+              <Link href="/admin/forgot-password" title="Forgot password" className="text-xs font-bold text-primary hover:underline">
                 Forgot password?
               </Link>
             </div>
