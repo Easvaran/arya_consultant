@@ -6,12 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "git-setup": "powershell -ExecutionPolicy Bypass -File ./setup-git.ps1",
+    "autopush": "node autopush.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "autoprefixer": "^10.4.19",
     "bcryptjs": "^2.4.3",
+    "chokidar": "^3.6.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.2",
     "jsonwebtoken": "^9.0.3",
