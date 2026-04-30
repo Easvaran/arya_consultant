@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface LogoProps {
   size?: number;
@@ -11,10 +12,13 @@ const Logo: React.FC<LogoProps> = ({ size = 32, className = "", color = "current
   if (src) {
     return (
       <div className={`${className} flex items-center justify-center overflow-hidden`} style={{ width: size, height: size }}>
-        <img 
+        <Image 
           src={src} 
           alt="Logo" 
+          width={size}
+          height={size}
           className="w-full h-full object-contain"
+          unoptimized
         />
       </div>
     );
