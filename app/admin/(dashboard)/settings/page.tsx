@@ -266,7 +266,14 @@ export default function SettingsPage() {
                     {settings.logoUrl ? (
                       <div className="relative group">
                         <div className="w-24 h-24 bg-white rounded-2xl shadow-sm flex items-center justify-center overflow-hidden border border-slate-100">
-                          <img src={settings.logoUrl} alt="Logo Preview" className="max-w-full max-h-full object-contain" />
+                          <Image 
+                            src={settings.logoUrl} 
+                            alt="Logo Preview" 
+                            width={96}
+                            height={96}
+                            className="max-w-full max-h-full object-contain" 
+                            unoptimized
+                          />
                         </div>
                         <button
                           type="button"
