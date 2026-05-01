@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { ShieldCheck, Mail, Loader2, Key, ArrowLeft } from "lucide-react";
 import toast from "react-hot-toast";
+import Head from "next/head";
 
 export default function AdminForgotPassword() {
   const [email, setEmail] = useState("");
@@ -65,6 +66,9 @@ export default function AdminForgotPassword() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-primary/20 px-4 py-6 md:py-12 relative overflow-hidden">
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/10 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500/10 rounded-full blur-[120px]"></div>

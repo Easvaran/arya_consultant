@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Lock, Loader2, Save, ArrowLeft } from "lucide-react";
 import toast from "react-hot-toast";
+import Head from "next/head";
 
 export default function AdminResetPassword() {
   const [newPassword, setNewPassword] = useState("");
@@ -59,6 +60,9 @@ export default function AdminResetPassword() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-primary/20 px-4 py-6 md:py-12 relative overflow-hidden">
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/10 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500/10 rounded-full blur-[120px]"></div>

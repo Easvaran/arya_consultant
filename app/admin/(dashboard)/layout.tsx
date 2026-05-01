@@ -16,6 +16,7 @@ import {
   MessageSquare
 } from "lucide-react";
 import Logo from "@/components/Logo";
+import Head from "next/head";
 
 export default function AdminDashboardLayout({ children }: { children: React.ReactNode }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -68,6 +69,9 @@ export default function AdminDashboardLayout({ children }: { children: React.Rea
 
   return (
     <div className="min-h-screen bg-slate-50 flex">
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       {/* Sidebar */}
       <aside className={`fixed inset-y-0 left-0 z-50 w-64 bg-slate-900 text-white transform transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:relative lg:translate-x-0`}>
         <div className="h-full flex flex-col">

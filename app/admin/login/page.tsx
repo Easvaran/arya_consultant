@@ -8,6 +8,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import { Landmark, Loader2, ShieldCheck, Lock, Mail, Key } from "lucide-react";
+import Head from "next/head";
 
 const schema = z.object({
   email: z.string().email("Invalid email address"),
@@ -84,14 +85,11 @@ export default function AdminLoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-primary/20 px-4 py-6 md:py-12 relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/10 rounded-full blur-[120px]"></div>
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500/10 rounded-full blur-[120px]"></div>
-      </div>
-
-      <div className="max-w-md w-full relative z-10">
+    <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-4">
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
+      <div className="w-full max-w-md">
         <div className="bg-white/95 backdrop-blur-xl p-8 md:p-10 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-white/20">
           <div className="text-center mb-10">
             <div className="inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-gradient-to-tr from-primary to-blue-600 rounded-3xl mb-6 shadow-xl shadow-primary/20 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
