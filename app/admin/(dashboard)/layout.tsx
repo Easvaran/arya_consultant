@@ -29,6 +29,19 @@ export default function AdminDashboardLayout({ children }: { children: React.Rea
   const pathname = usePathname();
 
   useEffect(() => {
+    // 1. Try to load from localStorage immediately
+    const cachedBranding = localStorage.getItem("cached_branding");
+    if (cachedBranding) {
+      try {
+        const data = JSON.parse(cachedBranding);
+        setBusinessName(data.businessName || "ARYA CONSULTANT");
+        setSubheading(data.subheading || "Your financial Needs is Our First Priority");
+        setLogoUrl(data.logoUrl || "");
+      } catch (e) {
+        console.error("Failed to parse cached branding");
+      }
+    }
+
     const role = localStorage.getItem("userRole");
     if (role !== "admin") {
       router.push("/admin/login");
@@ -44,6 +57,8 @@ export default function AdminDashboardLayout({ children }: { children: React.Rea
           setNameColor("#FFFFFF"); // Keep white for sidebar
           setSubheadingColor("#94A3B8"); // Keep slate for sidebar
           setLogoUrl(data.logoUrl || "");
+          // 2. Cache for next refresh
+          localStorage.setItem("cached_branding", JSON.stringify(data));
         }
       } catch (error) {
         console.error("Failed to load admin settings");

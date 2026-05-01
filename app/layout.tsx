@@ -13,14 +13,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "ARYA CONSULTANT - Fast & Secure Loans",
   description: "Experience the future of digital banking with ARYA CONSULTANT. Instant approvals and competitive rates.",
-  icons: {
-    icon: [
-      { url: '/logo.svg', type: 'image/svg+xml' },
-    ],
-    apple: [
-      { url: '/logo.svg', type: 'image/svg+xml' },
-    ],
-  },
 };
 
 export default function RootLayout({

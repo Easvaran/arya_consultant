@@ -16,8 +16,6 @@ const Navbar = () => {
   const [nameColor, setNameColor] = useState("#0F172A");
   const [subheadingColor, setSubheadingColor] = useState("#64748B");
   const [logoUrl, setLogoUrl] = useState("");
-  const router = useRouter();
-  const pathname = usePathname();
 
   const checkAuth = () => {
     const cookies = document.cookie.split(';');
@@ -29,6 +27,21 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    // 1. Try to load from localStorage immediately
+    const cachedBranding = localStorage.getItem("cached_branding");
+    if (cachedBranding) {
+      try {
+        const data = JSON.parse(cachedBranding);
+        setBusinessName(data.businessName || "ARYA CONSULTANT");
+        setSubheading(data.subheading || "Your financial Needs is Our First Priority");
+        setNameColor(data.nameColor || "#0F172A");
+        setSubheadingColor(data.subheadingColor || "#64748B");
+        setLogoUrl(data.logoUrl || "");
+      } catch (e) {
+        console.error("Failed to parse cached branding");
+      }
+    }
+
     checkAuth();
     
     const fetchSettings = async () => {
@@ -41,6 +54,8 @@ const Navbar = () => {
           setNameColor(data.nameColor || "#0F172A");
           setSubheadingColor(data.subheadingColor || "#64748B");
           setLogoUrl(data.logoUrl || "");
+          // 2. Cache for next refresh
+          localStorage.setItem("cached_branding", JSON.stringify(data));
         }
       } catch (error) {
         console.error("Failed to load navbar settings");
