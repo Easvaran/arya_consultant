@@ -16,6 +16,8 @@ const Navbar = () => {
   const [nameColor, setNameColor] = useState("#0F172A");
   const [subheadingColor, setSubheadingColor] = useState("#64748B");
   const [logoUrl, setLogoUrl] = useState("");
+  const router = useRouter();
+  const pathname = usePathname();
 
   const checkAuth = () => {
     const cookies = document.cookie.split(';');

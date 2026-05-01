@@ -1,8 +1,12 @@
+# *
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /api
+Disallow: /dashboard
 
-Disallow: /admin/
-Disallow: /api/
-Disallow: /dashboard/
+# Host
+Host: https://www.aryaconsultant.com
 
+# Sitemaps
 Sitemap: https://www.aryaconsultant.com/sitemap.xml
