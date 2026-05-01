@@ -54,7 +54,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-gray-400 mb-6">
-              Your trusted financial partner providing secure and fast loan solutions since 2010.
+              Your trusted financial partner providing secure and fast loan solutions since 2016.
             </p>
           </div>
 
