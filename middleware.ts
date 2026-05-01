@@ -10,8 +10,12 @@ export function middleware(request: NextRequest) {
 
   const { pathname } = request.nextUrl;
 
+  // EXCLUDE /admin/login from the redirect logic to prevent infinite loop
+  if (pathname === '/admin/login') {
+    return NextResponse.next();
+  }
+
   // If trying to access admin route without token or with user token
-  // For now we just check if token exists, the page will handle role check
   if (pathname.startsWith('/admin') && !token) {
     return NextResponse.redirect(new URL('/admin/login', request.url));
   }
