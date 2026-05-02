@@ -46,15 +46,17 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-1">
-            <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity mb-6">
-              <Logo size={40} color="#3B82F6" src={settings.logoUrl} />
+            <Link href="/" className="flex items-center gap-4 hover:opacity-80 transition-opacity mb-6">
+              <div className="bg-white p-1 rounded-lg">
+                <Logo size={44} color="#3B82F6" src={settings.logoUrl} />
+              </div>
               <div className="flex flex-col">
-                <span className="font-black text-2xl leading-tight" style={{ color: settings.nameColor }}>{settings.businessName}</span>
-                <span className="text-[10px] font-bold uppercase tracking-wider leading-none" style={{ color: settings.subheadingColor }}>{settings.subheading}</span>
+                <span className="font-black text-2xl leading-tight text-white">{settings.businessName}</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider leading-tight text-slate-400 max-w-[200px]">{settings.subheading}</span>
               </div>
             </Link>
             <p className="text-gray-400 mb-6">
-              Your trusted financial partner providing secure and fast loan solutions since 2016.
+              Your trusted financial partner providing secure and fast loan solutions since 2026.
             </p>
           </div>
 
