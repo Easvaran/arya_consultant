@@ -18,11 +18,11 @@ export default function Home() {
             Trusted by over 10,000+ customers
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight">
-            Fast & Secure Loans <br />
-            <span className="text-blue-200">For Your Dreams</span>
+            B2B Finance & <br />
+            <span className="text-blue-200">Loan Services</span>
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-blue-50 max-w-3xl mx-auto leading-relaxed">
-            Experience the future of digital banking. Get instant approvals, competitive rates, and 24/7 support for all your financial needs.
+            Your trusted partner for loans and financial solutions. Experience the future of digital banking.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link

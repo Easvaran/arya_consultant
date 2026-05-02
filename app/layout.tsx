@@ -11,8 +11,14 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ARYA CONSULTANT - Fast & Secure Loans",
-  description: "Experience the future of digital banking with ARYA CONSULTANT. Instant approvals and competitive rates.",
+  metadataBase: new URL("https://aryaconsultant.com"),
+  title: "B2B Finance & Loan Services | ARYA CONSULTANT",
+  description: "Get fast business loans, EMI calculators, and financial consulting services with ARYA CONSULTANT. Trusted finance partner for your growth.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
