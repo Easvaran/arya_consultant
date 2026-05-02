@@ -21,8 +21,8 @@ export default function LoginPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [settings, setSettings] = useState({
     logoUrl: "",
-    businessName: "ARYA CONSULTANT",
-    subheading: "Your financial Needs is Our First Priority",
+    businessName: "Arya Finance",
+    subheading: "Loan Services",
     nameColor: "#0F172A",
     subheadingColor: "#64748B",
   });
@@ -36,8 +36,8 @@ export default function LoginPage() {
           const data = await res.json();
           setSettings({
             logoUrl: data.logoUrl || "",
-            businessName: data.businessName || "ARYA CONSULTANT",
-            subheading: data.subheading || "Your financial Needs is Our First Priority",
+            businessName: data.businessName || "Arya Finance",
+            subheading: data.subheading || "Loan Services",
             nameColor: data.nameColor || "#0F172A",
             subheadingColor: data.subheadingColor || "#64748B",
           });

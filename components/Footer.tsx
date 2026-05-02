@@ -7,8 +7,8 @@ import Logo from "./Logo";
 
 const Footer = () => {
   const [settings, setSettings] = useState({
-    businessName: "ARYA CONSULTANT",
-    subheading: "Your financial Needs is Our First Priority",
+    businessName: "Arya Finance",
+    subheading: "Loan Services",
     nameColor: "#FFFFFF",
     subheadingColor: "#94A3B8",
     logoUrl: "",
@@ -24,8 +24,8 @@ const Footer = () => {
         if (res.ok) {
           const data = await res.json();
           setSettings({
-            businessName: data.businessName || "ARYA CONSULTANT",
-            subheading: data.subheading || "Your financial Needs is Our First Priority",
+            businessName: data.businessName || "Arya Finance",
+            subheading: data.subheading || "Loan Services",
             nameColor: data.nameColor || "#FFFFFF",
             subheadingColor: data.subheadingColor || "#94A3B8",
             logoUrl: data.logoUrl || "",
@@ -57,7 +57,7 @@ const Footer = () => {
             </Link>
             <p className="text-gray-400 mb-6">
               Your trusted financial partner providing secure and fast loan solutions since 2026.
-            </p>
+            </p>  
           </div>
 
           <div>

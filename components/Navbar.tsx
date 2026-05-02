@@ -11,8 +11,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [businessName, setBusinessName] = useState("ARYA CONSULTANT");
-  const [subheading, setSubheading] = useState("Your financial Needs is Our First Priority");
+  const [businessName, setBusinessName] = useState("Arya Finance");
+  const [subheading, setSubheading] = useState("Loan Services");
   const [nameColor, setNameColor] = useState("#0F172A");
   const [subheadingColor, setSubheadingColor] = useState("#64748B");
   const [logoUrl, setLogoUrl] = useState("");
@@ -34,8 +34,8 @@ const Navbar = () => {
     if (cachedBranding) {
       try {
         const data = JSON.parse(cachedBranding);
-        setBusinessName(data.businessName || "ARYA CONSULTANT");
-        setSubheading(data.subheading || "Your financial Needs is Our First Priority");
+        setBusinessName(data.businessName || "Arya Finance");
+        setSubheading(data.subheading || "Loan Services");
         setNameColor(data.nameColor || "#0F172A");
         setSubheadingColor(data.subheadingColor || "#64748B");
         setLogoUrl(data.logoUrl || "");
@@ -51,8 +51,8 @@ const Navbar = () => {
         const res = await fetch("/api/admin/settings");
         if (res.ok) {
           const data = await res.json();
-          setBusinessName(data.businessName || "ARYA CONSULTANT");
-          setSubheading(data.subheading || "Your financial Needs is Our First Priority");
+          setBusinessName(data.businessName || "Arya Finance");
+          setSubheading(data.subheading || "Loan Services");
           setNameColor(data.nameColor || "#0F172A");
           setSubheadingColor(data.subheadingColor || "#64748B");
           setLogoUrl(data.logoUrl || "");

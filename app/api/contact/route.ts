@@ -24,7 +24,7 @@ export async function POST(req: Request) {
           ${data.message.replace(/\n/g, '<br>') || 'No message provided'}
         </div>
         <hr style="margin: 20px 0; border: none; border-top: 1px solid #eee;" />
-        <p style="font-size: 12px; color: #666;">This message was sent from ARYA CONSULTANT contact form.</p>
+        <p style="font-size: 12px; color: #666;">This message was sent from Arya Finance contact form.</p>
       </div>
       `
     );

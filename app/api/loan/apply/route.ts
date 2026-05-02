@@ -46,7 +46,7 @@ export async function POST(req: Request) {
           <p><strong>Employment:</strong> ${data.employmentType}</p>
         </div>
         <hr style="margin: 20px 0; border: none; border-top: 1px solid #eee;" />
-        <p style="font-size: 12px; color: #666;">This is an automated notification from ARYA CONSULTANT Management System.</p>
+        <p style="font-size: 12px; color: #666;">This is an automated notification from Arya Finance Management System.</p>
       </div>
       `
     );

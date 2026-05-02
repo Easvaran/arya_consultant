@@ -201,7 +201,7 @@ export default function SettingsPage() {
                       value={settings.businessName}
                       onChange={(e) => setSettings({ ...settings, businessName: e.target.value })}
                       className="flex-1 px-4 py-3 rounded-xl bg-slate-50 border-2 border-slate-50 focus:border-primary focus:bg-white outline-none transition-all font-semibold"
-                      placeholder="ARYA CONSULTANT"
+                      placeholder="Arya Finance"
                     />
                     <div className="flex flex-col items-center gap-1">
                       <input
@@ -227,7 +227,7 @@ export default function SettingsPage() {
                       value={settings.subheading}
                       onChange={(e) => setSettings({ ...settings, subheading: e.target.value })}
                       className="flex-1 px-4 py-3 rounded-xl bg-slate-50 border-2 border-slate-50 focus:border-primary focus:bg-white outline-none transition-all font-semibold"
-                      placeholder="Your financial Needs is Our First Priority"
+                      placeholder="Loan Services"
                     />
                     <div className="flex flex-col items-center gap-1">
                       <input

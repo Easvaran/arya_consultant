@@ -60,7 +60,7 @@ export default function RegisterPage() {
           <div className="text-center mb-8">
             <Link href="/" className="inline-flex items-center gap-2 text-primary font-bold text-3xl mb-4">
               <Landmark size={40} />
-              <span>ARYA CONSULTANT</span>
+              <span>Arya Finance</span>
             </Link>
             <h2 className="text-2xl font-bold text-slate-900">Create Account</h2>
             <p className="mt-2 text-sm text-slate-500">

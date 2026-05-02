@@ -28,13 +28,13 @@ export async function POST(req: Request) {
         <div style="font-family: sans-serif; padding: 20px; color: #333; max-width: 600px; margin: auto; border: 1px solid #eee; border-radius: 12px;">
           <h2 style="color: #3b82f6; text-align: center;">Admin Password Reset</h2>
           <p>Hello,</p>
-          <p>You requested a password reset for your ARYA CONSULTANT Admin account. Use the OTP below to proceed:</p>
+          <p>You requested a password reset for your Arya Finance Admin account. Use the OTP below to proceed:</p>
           <div style="background: #f3f4f6; padding: 20px; border-radius: 12px; text-align: center; margin: 30px 0;">
             <span style="font-size: 32px; font-weight: 900; letter-spacing: 10px; color: #1e293b;">${otp}</span>
           </div>
           <p>This OTP is valid for <strong>10 minutes</strong>. If you didn't request this, please ignore this email.</p>
           <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;" />
-          <p style="font-size: 12px; color: #666; text-align: center;">ARYA CONSULTANT Secure Admin Portal</p>
+          <p style="font-size: 12px; color: #666; text-align: center;">Arya Finance Secure Admin Portal</p>
         </div>
       `
     });

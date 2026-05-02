@@ -52,7 +52,7 @@ export default function AdminDashboard() {
     <div className="space-y-8">
       <div>
         <h1 className="text-3xl font-black text-slate-900 mb-2">Dashboard Overview</h1>
-        <p className="text-slate-500 font-medium">Welcome back to the ARYA CONSULTANT administration portal.</p>
+        <p className="text-slate-500 font-medium">Welcome back to the Arya Finance administration portal.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

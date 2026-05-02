@@ -18,7 +18,7 @@ export default function Home() {
             Trusted by over 10,000+ customers
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight">
-            B2B Finance & <br />
+            Arya Finance & <br />
             <span className="text-blue-200">Loan Services</span>
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-blue-50 max-w-3xl mx-auto leading-relaxed">
@@ -46,7 +46,7 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Why Choose ARYA CONSULTANT?
+              Why Choose Arya Finance?
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
               We combine cutting-edge technology with personalized financial services to give you the best experience possible.
@@ -149,7 +149,7 @@ export default function Home() {
                     <p className="text-sm text-gray-500 not-italic">Verified User</p>
                   </div>
                 </div>
-                &quot;ARYA CONSULTANT helped me get a loan in minutes! The process was incredibly smooth and transparent.&quot;
+                &quot;Arya Finance helped me get a loan in minutes! The process was incredibly smooth and transparent.&quot;
               </div>
             ))}
           </div>

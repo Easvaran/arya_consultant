@@ -20,8 +20,8 @@ import Head from "next/head";
 
 export default function AdminDashboardLayout({ children }: { children: React.ReactNode }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-  const [businessName, setBusinessName] = useState("ARYA CONSULTANT");
-  const [subheading, setSubheading] = useState("Your financial Needs is Our First Priority");
+  const [businessName, setBusinessName] = useState("Arya Finance");
+  const [subheading, setSubheading] = useState("Loan Services");
   const [nameColor, setNameColor] = useState("#FFFFFF");
   const [subheadingColor, setSubheadingColor] = useState("#94A3B8");
   const [logoUrl, setLogoUrl] = useState("");
@@ -34,8 +34,8 @@ export default function AdminDashboardLayout({ children }: { children: React.Rea
     if (cachedBranding) {
       try {
         const data = JSON.parse(cachedBranding);
-        setBusinessName(data.businessName || "ARYA CONSULTANT");
-        setSubheading(data.subheading || "Your financial Needs is Our First Priority");
+        setBusinessName(data.businessName || "Arya Finance");
+        setSubheading(data.subheading || "Loan Services");
         setLogoUrl(data.logoUrl || "");
       } catch (e) {
         console.error("Failed to parse cached branding");
@@ -52,8 +52,8 @@ export default function AdminDashboardLayout({ children }: { children: React.Rea
         const res = await fetch("/api/admin/settings");
         if (res.ok) {
           const data = await res.json();
-          setBusinessName(data.businessName || "ARYA CONSULTANT");
-          setSubheading(data.subheading || "Your financial Needs is Our First Priority");
+          setBusinessName(data.businessName || "Arya Finance");
+          setSubheading(data.subheading || "Loan Services");
           setNameColor("#FFFFFF"); // Keep white for sidebar
           setSubheadingColor("#94A3B8"); // Keep slate for sidebar
           setLogoUrl(data.logoUrl || "");

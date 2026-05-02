@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
 export const sendEmail = async ({ to, subject, html }: { to: string; subject: string; html: string }) => {
   try {
     await transporter.sendMail({
-      from: `"${process.env.BUSINESS_NAME || 'ARYA CONSULTANT'}" <${process.env.SMTP_FROM}>`,
+      from: `"${process.env.BUSINESS_NAME || 'Arya Finance'}" <${process.env.SMTP_FROM}>`,
       to,
       subject,
       html,

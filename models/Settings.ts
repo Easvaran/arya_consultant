@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
 
 const SettingsSchema = new mongoose.Schema({
-  businessName: { type: String, default: 'ARYA CONSULTANT' },
-  subheading: { type: String, default: 'Your financial Needs is Our First Priority' },
+  businessName: { type: String, default: 'Arya Finance' },
+  subheading: { type: String, default: 'Loan Services' },
   nameColor: { type: String, default: '#0F172A' },
   subheadingColor: { type: String, default: '#64748B' },
   logoUrl: { type: String, default: '' },

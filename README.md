@@ -1,6 +1,6 @@
-# ARYA CONSULTANT - Modern Finance Platform
+# Arya Finance - Modern Finance Platform
 
-ARYA CONSULTANT is a full-stack fintech website built with Next.js, TypeScript, Tailwind CSS, and MongoDB. It offers personal and business loans, investment plans, and a secure user dashboard.
+Arya Finance is a full-stack fintech website built with Next.js, TypeScript, Tailwind CSS, and MongoDB. It offers personal and business loans, investment plans, and a secure user dashboard.
 
 ## 🚀 Features
 

@@ -4,11 +4,11 @@ export default function AboutPage() {
   return (
     <div className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
-        <h1 className="text-4xl font-bold text-center mb-8 text-primary">About ARYA CONSULTANT</h1>
+        <h1 className="text-4xl font-bold text-center mb-8 text-primary">About Arya Finance</h1>
         
         <div className="prose prose-lg mx-auto text-gray-600 mb-16 text-center">
           <p>
-            Founded in 2010, ARYA CONSULTANT has been at the forefront of digital lending and financial services. 
+            Founded in 2010, Arya Finance has been at the forefront of digital lending and financial services. 
             Our mission is to make credit accessible, affordable, and transparent for everyone. 
             We believe in empowering individuals and businesses to achieve their dreams without financial hurdles.
           </p>
