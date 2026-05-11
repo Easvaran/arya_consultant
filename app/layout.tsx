@@ -15,9 +15,11 @@ export const metadata: Metadata = {
   title: "Arya Finance & Loan Services",
   description: "Get fast business loans, EMI calculators, and financial consulting services with Arya Finance. Trusted finance partner for your growth.",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-icon.png",
+    icon: [
+      { url: "/logo.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
   },
 };
 
