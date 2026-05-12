@@ -10,8 +10,8 @@ export function middleware(request: NextRequest) {
 
   const { pathname } = request.nextUrl;
 
-  // EXCLUDE /admin/login from the redirect logic to prevent infinite loop
-  if (pathname === '/admin/login') {
+  // EXCLUDE /admin/login and /admin/forgot-password and /admin/reset-password from the redirect logic
+  if (pathname === '/admin/login' || pathname === '/admin/forgot-password' || pathname === '/admin/reset-password') {
     return NextResponse.next();
   }
 
